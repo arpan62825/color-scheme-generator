@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color-picker</title>
+  </head>
+  <body>
+    <div class="options">
+      <label for="color-scheme">Pick a Scheme: </label>
+      <select class="color-scheme" name="color-scheme" id="color-scheme">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-Dark</option>
+        <option value="monochrome-light">Monochrome-Light</option>
+        <option value="analogic">Analog</option>
+        <option value="complement">Complementary</option>
+        <option value="analogic-complement">Analogic-Complementary</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+      <label for="color">Pick initial Color:</label>
+      <input class="color-input" id="color" name="color" type="color" />
+    </div>
+    <div class="color-columns">
+      <div class="color-column one">
+        <p>Light-blue</p>
+        <p>#add8e6</p>
+      </div>
+      <div class="color-column two">
+        <p>Light-coral</p>
+        <p>#f08080</p>
+      </div>
+      <div class="color-column three">
+        <p>Light-cyan</p>
+        <p>#e0ffff</p>
+      </div>
+      <div class="color-column four">
+        <p>Light-sea-green</p>
+        <p>#20b2aa</p>
+      </div>
+      <div class="color-column five">
+        <p>Light-salmon</p>
+        <p>#ffa07a</p>
+      </div>
+    </div>
+    <div class="button">
+      <button class="generate-btn">Generate</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
